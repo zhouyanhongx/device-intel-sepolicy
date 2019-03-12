@@ -20,3 +20,6 @@
 /boot     		     u:object_r:rootfs:s0
 /persistent		     u:object_r:rootfs:s0
 /gpt.igeneric.ini     u:object_r:rootfs:s0
+
+/sys/class/thermal(/.*)?             u:object_r:sysfs_thermal:s0
+/sys/module/thermal(/.*)?            u:object_r:sysfs_thermal:s0
